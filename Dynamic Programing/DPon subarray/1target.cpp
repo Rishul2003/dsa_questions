@@ -46,7 +46,7 @@ int main(){
     dp[0][a[0]]=1;
     for(int i=0;i<n;i++){
         for(int j=1;j<target;j++){
-            bool nottake=dp[i-1][target];
+            bool nottake=dp[i-1][j];
             bool take=false;
             if(a[i]<=target){
                 take=dp[i-1][target-a[i]];
